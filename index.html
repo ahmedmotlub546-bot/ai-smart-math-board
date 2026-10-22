@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Smart Math Board</title>
+  <link rel="stylesheet" href="/src/styles/base.css">
+  <link rel="stylesheet" href="/src/styles/layout.css">
+  <link rel="stylesheet" href="/src/styles/canvas.css">
+  <link rel="stylesheet" href="/src/styles/responsive.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>AI Smart Math Board</h1>
+      <nav>
+        <button data-view="board">Board</button>
+        <button data-view="geometry">Geometry</button>
+        <button data-view="coordinates">Coordinates</button>
+        <button data-view="graph">Graph</button>
+        <button data-view="3d">3D Lab</button>
+        <button data-view="animation">Animation</button>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-btn">Toggle Theme</button>
+      </div>
+    </header>
+    <main>
+      <div id="board-view" class="view active">
+        <svg id="smartboard"></svg>
+        <div id="tools">
+          <button id="pen">Pen</button>
+          <button id="note">Note</button>
+          <button id="triangle">Triangle</button>
+          <button id="circle">Circle</button>
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+          <button id="clear">Clear</button>
+        </div>
+      </div>
+      <!-- Other views would be here in full implementation -->
+      <div id="inspector"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
